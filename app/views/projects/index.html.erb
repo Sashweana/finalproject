@@ -2,7 +2,7 @@
 
 <h1>Projects</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Title</th>
@@ -20,7 +20,7 @@
         <td><%= project.title %></td>
         <td><%= project.goal %></td>
         <td><%= project.fund %></td>
-        <td><%= project.user %></td>
+        <td><%= project.user.email %></td>
         <td><%= project.description %></td>
         <td><%= link_to 'Show', project %></td>
         <td><%= link_to 'Edit', edit_project_path(project) %></td>
