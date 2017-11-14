@@ -15,10 +15,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#about">Projects</a>
+                    <a class="page-scroll" href="/projects">Projects</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">contact</a>
+                    <a class="page-scroll" href="#portfolio">Contact</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="http://localhost:3000/sign_in">sign in</a>
@@ -60,7 +60,7 @@
   <%= @project.description %>
 </p>
 
-<button>Donate</button> <br><br>
+<button class="btn btn primary" style="background-color: orange;">Donate</button> <br><br>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
