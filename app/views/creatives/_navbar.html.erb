@@ -20,9 +20,23 @@
                 <li>
                     <a class="page-scroll" href="#portfolio">contact</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="http://localhost:3000/sign_in">sign in</a>
-                </li>
+          
+
+
+                <% if signed_in? %>
+                    <li>
+                                  
+                               
+                  <%= link_to "Sign out", sign_out_path, method: :delete, class: "page-scroll"%>
+                   </li>
+                <% else %>
+                 <li>
+                  <a class="page-scroll" href="/sign_in">sign in</a>
+                   </li>
+                <% end %>
+
+
+
             </ul>
         </div>
         <!-- /.navbar-collapse -->
